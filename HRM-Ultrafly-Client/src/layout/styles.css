@@ -1,0 +1,50 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background: #1890ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background: #f0f2f5;
+  border-right: 1px solid #d9d9d9;
+}
+
+.content {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  transition: padding-left 0.3s;
+}
+
+.footer {
+  background: #1890ff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.no-hover:hover {
+  background-color: transparent !important;
+}
