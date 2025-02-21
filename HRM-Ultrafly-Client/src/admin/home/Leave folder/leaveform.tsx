@@ -123,9 +123,9 @@ const LeaveForm: React.FC = () => {
 
   const columns = [
     {
-      title: "Employee ID",
-      dataIndex: "employeeId",
-      key: "employeeId",
+      title: "Student ID",
+      dataIndex: "Studentid",
+      key: "Studentid",
     },
     {
       title: "Leave Type",
@@ -205,12 +205,12 @@ const LeaveForm: React.FC = () => {
             }}
           >
             <Form.Item
-              name="employeeId"
-              label="Employee ID"
-              rules={[{ required: true, message: "Please enter your employee ID!" }]}
+              name="StudentId"
+              label="Student ID"
+              rules={[{ required: true, message: "Please enter your Student ID!" }]}
             >
               <Input
-                placeholder="Employee ID"
+                placeholder="Student ID"
                 style={{
                   borderRadius: "4px",
                   padding: "10px",

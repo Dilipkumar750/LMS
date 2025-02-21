@@ -319,7 +319,7 @@ import {
   FaMoneyBillAlt,
   FaComment,
 } from "react-icons/fa";
-import logo from "../Assets/logo.webp.png";
+import logo from "../Assets/logo.webp";
 
 interface SideNavProps {
   sidebarOpen: boolean;
@@ -360,10 +360,12 @@ export const SideBar: React.FC<SideNavProps> = ({ sidebarOpen, setSidebarOpen, v
   const employeeMenu = [
     { path: "/home/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
     { path: "/home/leave-calendar", label: "Leave Calendar", icon: <FaLayerGroup /> },
-    { path: "/home/company-policy", label: "Company Policy", icon: <FaUsers /> },
+    // { path: "/home/company-policy", label: "Company Policy", icon: <FaUsers /> },
     { path: "/home/profile", label: "Profile", icon: <FaUsers /> },
     { path: "/home/personal-details", label: "Personal Details", icon: <FaBox /> },
     { path: "/home/leave-form", label: "Apply Leave", icon: <FaMoneyBillAlt /> },
+    { path: "/home/Course", label: "Courses", icon: <FaMoneyBillAlt /> },
+    { path: "/home/TaskAllocation", label: "Task Allocation", icon: <FaMoneyBillAlt /> },
   ];
 
   const menuItems = userRole === "Admin" ? adminMenu : employeeMenu;

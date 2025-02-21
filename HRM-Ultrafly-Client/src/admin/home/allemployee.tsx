@@ -128,13 +128,13 @@ console.log(filteredEmployees)
 
   return (
     <div className="bg-white h-full px-8 py-6">
-      <h2 className="text-2xl font-bold mb-4">All Employees</h2>
+      <h2 className="text-2xl font-bold mb-4">All Student</h2>
 
       {/* Filters and Search */}
       <div className="flex gap-4 mb-4">
         <input
           type="text"
-          placeholder="Search by name or Employee ID"
+          placeholder="Search by name or Student ID"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="border px-4 py-2 rounded w-1/3"
@@ -165,14 +165,14 @@ console.log(filteredEmployees)
           onClick={toggleDrawer}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-1/6 mx-auto"
         >
-          Add Employee
+          Add Student
         </button>
         <button
           type="button"
           onClick={toggleDrawer}
           className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-1/6 mx-auto"
         >
-          Delete Employee
+          Delete Student
         </button>
       </div>
 
@@ -181,7 +181,7 @@ console.log(filteredEmployees)
         <thead>
           <tr className="bg-gray-100">
             <th className="border border-gray-300 px-4 py-2">S.No</th>
-            <th className="border border-gray-300 px-4 py-2">Employee ID</th>
+            <th className="border border-gray-300 px-4 py-2">Student ID</th>
             <th className="border border-gray-300 px-4 py-2">Name</th>
             <th className="border border-gray-300 px-4 py-2">Designation</th>
             <th className="border border-gray-300 px-4 py-2">Department</th>
@@ -244,7 +244,7 @@ console.log(filteredEmployees)
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end justify-end z-50">
           <div className="bg-white w-1/3 h-full p-6 overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg font-bold">Add Employee</h3>
+              <h3 className="text-lg font-bold">Add Student</h3>
               <button
                 onClick={toggleDrawer}
                 className="text-red-500 hover:text-red-700 text-lg font-bold w-10"

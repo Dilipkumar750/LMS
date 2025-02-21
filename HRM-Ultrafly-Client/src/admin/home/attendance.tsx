@@ -208,12 +208,12 @@ const AttendancePage: React.FC = () => {
  
        {/* Employee Details Table */}
        <div className="mb-6">
-         <h3 className="text-lg font-bold mb-3">Employee Details</h3>
+         <h3 className="text-lg font-bold mb-3">Student Details</h3>
          <table className="table-auto w-full border border-gray-300">
            <thead className="bg-gray-100">
              <tr>
-               <th className="border px-4 py-2">Employee ID</th>
-               <th className="border px-4 py-2">Employee Name</th>
+               <th className="border px-4 py-2">Student ID</th>
+               <th className="border px-4 py-2">Student Name</th>
                <th className="border px-4 py-2">Designation</th>
                <th className="border px-4 py-2">Team</th>
                <th className="border px-4 py-2">Status</th>

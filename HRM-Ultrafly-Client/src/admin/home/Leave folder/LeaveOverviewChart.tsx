@@ -1,4 +1,3 @@
-
 import React from "react";
 import EChartsReact from "echarts-for-react";
 import { Card } from "antd";
@@ -11,16 +10,16 @@ interface LeaveData {
 
 const LeaveOverviewChart: React.FC = () => {
   const chartData: LeaveData[] = [
-    { value: 15, name: "Earned Leaves" },
-    { value: 20, name: "Leave without Pay" },
-    { value: 50, name: "Casual Leaves" },
-    { value: 15, name: "Sick Leaves" },
+    { value: 30, name: "Total Leaves" },
+    { value: 20, name: "Approved Leaves" },
+    { value: 5, name: "Rejected Leaves" },
+    { value: 75, name: "Present Days" },
   ];
 
   const options: echarts.EChartsOption = {
     title: {
-      text: "Total Leaves",
-      subtext: "30",
+      text: "Leave Overview",
+      subtext: `Total: ${chartData[0].value} | Present: ${chartData[3].value}%`,
       left: "center",
       top: "40%",
       textStyle: {
@@ -28,7 +27,7 @@ const LeaveOverviewChart: React.FC = () => {
         fontWeight: "bold",
       },
       subtextStyle: {
-        fontSize: 20,
+        fontSize: 14,
         color: "#333",
       },
     },
@@ -43,7 +42,7 @@ const LeaveOverviewChart: React.FC = () => {
     },
     series: [
       {
-        name: "Leave Type",
+        name: "Leave Statistics",
         type: "pie",
         radius: ["50%", "70%"],
         avoidLabelOverlap: false,
@@ -68,12 +67,10 @@ const LeaveOverviewChart: React.FC = () => {
   };
 
   return (
-    <div style={{marginLeft:15, paddingBottom:5 }}>
-    <Card title="Leave Overview Chart" bordered={false} style={{ marginBottom: 40 }}>
-      <EChartsReact option={options}
-      
-       style={{ height: 260 , paddingLeft:5 , marginBottom:0}} />
-    </Card>
+    <div style={{ marginLeft: 15, paddingBottom: 5 }}>
+      <Card title="Leave Overview Chart" bordered={false} style={{ marginBottom: 40 }}>
+        <EChartsReact option={options} style={{ height: 260, paddingLeft: 5, marginBottom: 0 }} />
+      </Card>
     </div>
   );
 };

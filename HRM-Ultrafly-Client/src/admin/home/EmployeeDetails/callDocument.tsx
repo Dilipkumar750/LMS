@@ -52,8 +52,8 @@ const Documents: React.FC<DocumentProps> = ({ setActiveTab }) => {
     { name: 'pgDegreeCertificate', label: 'PG Degree Certificate / Marksheet ', maxCount: 1 },
     { name: 'previousCompanyOfferLetter', label: 'Previous Company Offer Letter', maxCount: 1 },
     { name: 'previousCompanyReleavingLetter', label: 'Previous Company Releaving Letter', maxCount: 1 },
-    { name: 'experienceLetter', label: 'Experience Letter', maxCount: 1 },
-    { name: 'payslip', label: 'Payslip', maxCount: 1 },
+    // { name: 'experienceLetter', label: 'Experience Letter', maxCount: 1 },
+    // { name: 'payslip', label: 'Payslip', maxCount: 1 },
   ];
 
   const handleFinish = async () => {

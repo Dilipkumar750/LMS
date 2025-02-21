@@ -20,6 +20,8 @@ import {PayslipGenerator} from "../admin/home/payslipGenerator";
 import Profile from "../admin/home/profile";
 import LeaveCalendar from "../admin/home/Leave-calendar";
 import { PayslipTemplate } from "../admin/home/PayslipTemplate";
+import Course from "../admin/home/Leave folder/Course";
+import TaskAllocation from "../admin/home/Leave folder/TaskAllocation";
 
 export const AppRouter: React.FC = () => {
   const dispatch = useDispatch();
@@ -77,6 +79,8 @@ export const AppRouter: React.FC = () => {
           <Route path="payslip-generator" element={<PayslipGenerator />} />
           <Route path="payslip-template" element={<PayslipTemplate />} />
           <Route path="leave-form" element={<LeaveForm />} />
+          <Route path="Course" element={<Course />} />
+          <Route path="TaskAllocation" element={<TaskAllocation />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

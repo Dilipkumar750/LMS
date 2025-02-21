@@ -113,7 +113,7 @@ export const HRMDashboard: React.FC = () => {
 
   return (
     <div className="w-full h-full bg-gray-100 p-5 font-sans">
-      <h1 className="text-center text-2xl font-bold mb-5">HRM Dashboard</h1>
+      <h1 className="text-center text-2xl font-bold mb-5">LMS Dashboard</h1>
 
       {/* Layout for the dashboard */}
       <div className="flex flex-col gap-5">
@@ -122,7 +122,7 @@ export const HRMDashboard: React.FC = () => {
           {/* Box 1: HR Announcements */}
           <div className="bg-white p-5 shadow-lg rounded-lg flex flex-col md:flex-row h-72 hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
             <div className="flex flex-col w-full md:w-1/2 p-5 overflow-hidden border border-gray-300 rounded-lg">
-              <h2 className="font-bold text-xl mb-3   text-primaryBlue">HR Announcements</h2>
+              <h2 className="font-bold text-xl mb-3   text-primaryBlue">Announcements</h2>
               <Swiper
                 modules={[Pagination, Autoplay]}
                 spaceBetween={20}
@@ -213,7 +213,7 @@ export const HRMDashboard: React.FC = () => {
         </div>
 
         {/* Row 2: Calendar, Reporting Managers, and Birthdays */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
           {/* Box 3: Monthly Calendar */}
           <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-[430px] hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
             <h2 className="font-bold text-xl mb-3  text-primaryBlue">Calendar</h2>
@@ -232,7 +232,7 @@ export const HRMDashboard: React.FC = () => {
           </div>
 
           {/* Box 4: Today's Birthdays & Anniversaries */}
-          <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-[430px] hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
+          {/* <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-[430px] hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
             <h2 className="font-bold text-xl mb-3  text-primaryBlue">Today's Birthdays & Anniversaries</h2>
             <ul className="text-left list-disc pl-5">
               <li className="flex items-center mb-3">
@@ -266,11 +266,11 @@ export const HRMDashboard: React.FC = () => {
             <div className="flex justify-center mt-4">
               <img src={cake} alt="Cake" className="w-28 h-28" />
             </div>
-          </div>
+          </div> */}
 
           {/* Box 5: Reporting Manager */}
           <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-[430px] hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out relative">
-            <h2 className="font-bold text-xl mb-5  text-primaryBlue">Reporting Manager</h2>
+            <h2 className="font-bold text-xl mb-5  text-primaryBlue">Reporting Faculty</h2>
             <div className="flex items-center justify-center mb-5">
               {/* Image Section */}
               <img
@@ -281,7 +281,7 @@ export const HRMDashboard: React.FC = () => {
               {/* Details Section */}
               <div className="text-left">
                 <p className="text-lg font-bold text-black">Mike Johnson</p>
-                <p className="text-sm text-gray-600">HR Department</p>
+                <p className="text-sm text-gray-600">Science Department</p>
               </div>
             </div>
             {/* Centered Bottom Image */}
@@ -293,7 +293,7 @@ export const HRMDashboard: React.FC = () => {
         </div>
 
         {/* Row 3: Company Address */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+     
           {/* Left Section: Vision & Mission */}
           <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-full hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
             <h2 className="font-bold text-xl mb-3 text-blue-600">Vision & Mission</h2>
@@ -309,47 +309,9 @@ export const HRMDashboard: React.FC = () => {
           </div>
 
 
-          {/* Right Section: Company Details & Contact */}
-          <div className="bg-white p-5 shadow-lg rounded-lg text-center text-lg h-full hover:border-b-4 border-violet-500 transition-all duration-300 ease-in-out">
-            <div className="flex items-center justify-center "> {/* Center content vertically */}
-              <img src={logo} alt="Company Logo" className="w-44 h-24" />
-              <div className="ml-4 flex flex-col justify-start items-start w-50% h-full"> {/* Add margin-left to separate text from logo */}
-                <h2 className="font-bold text-xl mb-3  text-primaryBlue">Company Details</h2>
-                <p className="text-black text-sm mb-2">
-                  <strong>Company:</strong> Ultrafly Solutions Pvt Ltd
-                </p>
-                <p className="text-black text-sm mb-2">
-                  <strong>Address:</strong> 123 Business Park Avenue, New York, NY 10001
-                </p>
-                <p className="text-black text-sm mb-2">
-                  <strong>Phone:</strong> +1-800-123-4567
-                </p>
-                <p className="text-black text-sm mb-2">
-                  <strong>Email:</strong> contact@ultrafly.com
-                </p>
-                <p className="text-black text-sm mb-2">
-                  <strong>Website:</strong> <a href="https://www.ultrafly.com" className="text-blue-500">www.ultrafly.com</a>
-                </p>
+          
+           
 
-                {/* Social Media Icons */}
-                <div className="flex justify-center mt-4 space-x-4">
-                  <a href="https://facebook.com" className=" text-primaryBlue">
-                    <FaFacebookF />
-                  </a>
-                  <a href="https://twitter.com" className="text-blue-400">
-                    <FaTwitter />
-                  </a>
-                  <a href="https://linkedin.com" className="text-blue-700">
-                    <FaLinkedinIn />
-                  </a>
-                  <a href="https://instagram.com" className="text-pink-500">
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

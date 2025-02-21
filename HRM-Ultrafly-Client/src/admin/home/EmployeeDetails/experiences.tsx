@@ -44,7 +44,7 @@ const ExperiencesDetails: React.FC<ExperiencesDetailsProps> = ({ setActiveTab, s
       style={{ maxWidth: '100%' }}
       className="p-6 bg-white shadow-2xl"
     >
-      <h2 className="text-xl font-bold mb-4">Experiences Details</h2>
+      <h2 className="text-xl font-bold mb-4">Course Details</h2>
 
       {/* Dynamic Form List for Experiences */}
       <Form.List name="experiences">

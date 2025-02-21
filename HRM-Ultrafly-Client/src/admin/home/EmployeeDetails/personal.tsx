@@ -48,9 +48,9 @@ const PersonalForm: React.FC<PersonalFormProps> = ({ setActiveTab, saveData }) =
       }}
     >
       <Form.Item
-        label={<span className="font-medium text-[16px]">Employee Name</span>}
+        label={<span className="font-medium text-[16px]">Student Name</span>}
         name="name"
-        rules={[{ required: true, message: 'Please input Employee Name!' }]}
+        rules={[{ required: true, message: 'Please input Student Name!' }]}
       >
         <Input placeholder="Enter full name" style={{ width: '70%', paddingBottom: '18px' }} />
       </Form.Item>
@@ -169,11 +169,11 @@ const PersonalForm: React.FC<PersonalFormProps> = ({ setActiveTab, saveData }) =
 
       {/* Employee Image Upload */}
       <Form.Item
-        label={<span className="font-medium text-[16px]">Employee Image</span>}
+        label={<span className="font-medium text-[16px]">Student Image</span>}
         name="image"
         valuePropName="fileList"
         getValueFromEvent={({ fileList }) => fileList}
-        rules={[{ required: true, message: 'Please upload an employee image!' }]}
+        rules={[{ required: true, message: 'Please upload an Student image!' }]}
       >
         <Upload
           accept=".jpeg,.jpg,.png"

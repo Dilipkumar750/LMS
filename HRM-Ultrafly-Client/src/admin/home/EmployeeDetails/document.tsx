@@ -49,10 +49,10 @@ const Documents: React.FC<DocumentProps> = ({ setActiveTab, saveData }) => {
     { name: 'panCard', label: 'PAN Card', maxCount: 2 },
     { name: 'ugDegreeOrMarksheet', label: 'UG Degree Certificate / Marksheet', maxCount: 2 },
     { name: 'pgDegreeCertificate', label: 'PG Degree Certificate / Marksheet ', maxCount: 1 },
-    { name: 'previousCompanyOfferLetter', label: 'Previous Company Offer Letter', maxCount: 1 },
-    { name: 'previousCompanyReleavingLetter', label: 'Previous Company Releaving Letter', maxCount: 1 },
-    { name: 'experienceLetter', label: 'Experience Letter', maxCount: 1 },
-    { name: 'payslip', label: 'Payslip', maxCount: 1 },
+    // { name: 'previousCompanyOfferLetter', label: 'Previous Company Offer Letter', maxCount: 1 },
+    // { name: 'previousCompanyReleavingLetter', label: 'Previous Company Releaving Letter', maxCount: 1 },
+    // { name: 'experienceLetter', label: 'Experience Letter', maxCount: 1 },
+    // { name: 'payslip', label: 'Payslip', maxCount: 1 },
   ];
 
   // Handle form submission and file upload using axios

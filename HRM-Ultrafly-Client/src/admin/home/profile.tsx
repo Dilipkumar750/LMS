@@ -119,7 +119,7 @@ const Profile: React.FC = () => {
           <Tabs className="custom-tabs" tabBarStyle={{ borderBottom: "none" }}>
             <TabPane tab="Personal Details" key="1">
               <Descriptions bordered column={1}>
-                <Descriptions.Item label="Employee Name">{userData?.name}</Descriptions.Item>
+                <Descriptions.Item label="Student Name">{userData?.name}</Descriptions.Item>
                 <Descriptions.Item label="Email">{userData?.email}</Descriptions.Item>
                 <Descriptions.Item label="Mobile">{userData?.mobile}</Descriptions.Item>
                 <Descriptions.Item label="Date of Birth">{userData?.dob}</Descriptions.Item>
@@ -149,13 +149,13 @@ const Profile: React.FC = () => {
             </TabPane>
 
             {/* Experience Details Tab */}
-            <TabPane tab="Experience Details" key="3">
+            {/* <TabPane tab="Experience Details" key="3">
               <Descriptions bordered column={1}>
                 <Descriptions.Item label="Previous Company Name">{userData?.experience?.company}</Descriptions.Item>
                 <Descriptions.Item label="Previous Job Title">{userData?.experience?.jobTitle}</Descriptions.Item>
                 <Descriptions.Item label="Years of Experience">{userData?.experience?.years}</Descriptions.Item>
               </Descriptions>
-            </TabPane>
+            </TabPane> */}
 
             {/* Document Details Tab */}
             <TabPane tab="Document Details" key="4">
@@ -186,16 +186,16 @@ const Profile: React.FC = () => {
             </TabPane>
 
             {/* Bank Details Tab */}
-            <TabPane tab="Bank Details" key="6">
+            {/* <TabPane tab="Bank Details" key="6">
               <Descriptions bordered column={1}>
                 <Descriptions.Item label="Account Name">{userData?.bank?.accountName}</Descriptions.Item>
                 <Descriptions.Item label="Account Number">{userData?.bank?.accountNumber}</Descriptions.Item>
                 <Descriptions.Item label="Bank Branch">{userData?.bank?.branch}</Descriptions.Item>
                 <Descriptions.Item label="IFS Code">{userData?.bank?.ifsCode}</Descriptions.Item>
               </Descriptions>
-            </TabPane>
+            </TabPane> */}
 
-            <TabPane tab="Payslip" key="7">
+            {/* <TabPane tab="Payslip" key="7">
             <Table
               dataSource={samplePayslipData}
               columns={[
@@ -216,7 +216,7 @@ const Profile: React.FC = () => {
                 },
               ]}
             />
-          </TabPane>
+          </TabPane> */}
           </Tabs>
         </div>
       </div>

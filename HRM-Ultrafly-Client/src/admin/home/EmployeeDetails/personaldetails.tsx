@@ -55,7 +55,7 @@ const PersonalDetails: React.FC = () => {
     },
     {
       key: '3',
-      label: 'Experiences Details',
+      label: 'Course Details',
       children: (
         <ExperiencesDetails
           setActiveTab={(key) => validateAndNavigate('3', key, () => Promise.resolve())}
@@ -83,22 +83,22 @@ const PersonalDetails: React.FC = () => {
         />
       ),
     },
-    {
-      key: '6',
-      label: 'Bank Details',
-      children: (
-        <BankDetails
-          setActiveTab={(key) => validateAndNavigate('6', key, () => Promise.resolve())}
-          saveData={(values) => updateFormData('6', values)}
-        />
-      ),
-    },
+    // {
+    //   key: '6',
+    //   label: 'Bank Details',
+    //   children: (
+    //     <BankDetails
+    //       setActiveTab={(key) => validateAndNavigate('6', key, () => Promise.resolve())}
+    //       saveData={(values) => updateFormData('6', values)}
+    //     />
+    //   ),
+    // },
   ];
 
   return (
     <div className="px-10">
       <div className="custom-tabs bg-white p-4">
-        <h1 className="text-2xl font-bold mb-6 text-gray-800">Employee Details</h1>
+        <h1 className="text-2xl font-bold mb-6 text-gray-800">Student Details</h1>
         <Tabs activeKey={activeTab} onChange={setActiveTab} items={items} />
       </div>
     </div>
